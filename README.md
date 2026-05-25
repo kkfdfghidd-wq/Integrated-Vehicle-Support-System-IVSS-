@@ -44,7 +44,7 @@ IVSS connects drivers experiencing vehicle breakdowns with certified garages acr
 
 ```
 ivss/
-├── database.sql                    ← Full DB schema + seed data
+├── ivss2_db.sql                    ← Full DB schema + seed data
 ├── css/
 │   └── style.css
 ├── includes/
@@ -164,7 +164,7 @@ python3 scripts/subscription_manager.py cancel 5      # Cancel subscription
 ### 1. Import the Database
 
 ```bash
-mysql -u root -p < database.sql
+mysql -u root -p < ivss2_db.sql
 ```
 
 If upgrading an existing database:
